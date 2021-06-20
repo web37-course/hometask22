@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Индекс массы тела</h1>
+
+        <form>
+            
+            <div class="row mb-3">
+              <label for="inputHeight" class="col-sm-4 col-form-label"><i class="fas fa-ruler-vertical"></i> Укажите Ваш рост в метрах</label>
+              <div class="col-sm-3">
+                <input type="number" class="form-control" id="inputHeight" min="0.30" step="0.01" value="1.5">
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="inputWeight" class="col-sm-4 col-form-label"><i class="fas fa-weight"></i> Укажите Ваш вес в килограммах</label>
+              <div class="col-sm-3">
+                <input type="number" class="form-control" id="inputWeight" min="1" value="50">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-7">
+                    <button onclick="bwiCalc()" type="button" class="btn btn-info w-100">Рассчитать</button>
+                </div>
+            </div>
+
+        </form>
+
+        <h1 id="bwiValue">Ваш Индекс:</h1>
+
+        <h3 id="bwiMeaning">Он означает:</h3>
+
+        
+
+    </div>
+    
+</body>
+
+</html>
